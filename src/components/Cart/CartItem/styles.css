@@ -1,0 +1,123 @@
+.cartitem {
+    width: 100%;
+    max-width: 575px;
+    height: 100px;
+    margin-bottom: .5rem;
+    display: flex;
+    border: 1px solid var(--extra-extra-light-gray);
+    border-radius: 5px;
+}
+
+.cartitem__image {
+    object-fit: contain;
+    width: 100px;
+}
+
+.cartitem__info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--extra-extra-light-gray);
+}
+
+.cartitem__name {
+    font-size: .75rem;
+}
+
+.cartitem__options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cartitem__price {
+    font-size: .75rem;
+    padding-bottom: .5rem;
+}
+
+.cartitem__edits {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartitem__amount {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.cartitem__button {
+    min-width: 0 !important;
+    width: 1rem !important;
+    height: 1rem !important;
+    border-radius: 5px !important;
+    margin-right: .25rem !important;
+    background-color: var(--extra-extra-light-gray) !important;
+}
+
+.cartitem__multiple {
+    height: 1rem !important;
+}
+
+.cartitem__removeButton {
+    min-width: 0 !important;
+    background-color: var(--gray) !important;
+    width: 1rem !important;
+    height: 1rem !important;
+}
+
+.cartitem__removeButton:hover {
+
+}
+
+.cartitem__removeIcon {
+    color: var(--light) !important;
+    width: .75rem !important;
+    height: .75rem !important;
+}
+
+
+@media (min-width: 350px) {
+    .cartitem {
+        height: 150px;
+    }
+
+    .cartitem__image {
+        width: 150px;
+    }
+    .cartitem__name {
+        font-size: 1rem;
+    }
+    
+    .cartitem__price {
+        font-size: 1rem;
+    } 
+    .cartitem__button {
+        width: 1.75rem !important;
+        height: 1.75rem !important;
+    }
+    .cartitem__icon {
+        width: 2rem !important;
+        height: 2rem !important;
+    }
+
+    .cartitem__removeButton {
+        width: 1.75rem !important;
+        height: 1.75rem !important;
+    }
+
+    .cartitem__removeIcon {
+        width: 1.5rem !important;
+        height: 1.5rem !important;
+    }
+}
+
+@media (min-width: 925px) {
+   
+}
+
+@media (min-width: 1116px) {
+   
+}

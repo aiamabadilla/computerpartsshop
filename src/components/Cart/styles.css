@@ -1,0 +1,100 @@
+.cart {
+    margin: 0 auto;
+    padding: 4rem .5rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+}
+
+.cart__title {
+    padding-top: 2rem;
+    padding-left: .5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: var(--dark-gray);
+}
+
+.cart__loading {
+    margin: 2rem auto;
+    color: var(--gray) !important;
+}
+
+.cart__empty {
+    font-size: 1rem;
+}
+
+.cart__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--extra-extra-light-gray);
+    border-radius: 5px;
+    margin-top: 1rem;
+    border: 1px solid var(--light-gray);
+    max-width: 400px;
+}
+
+.cart__infoHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.cart__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 1rem;
+}
+
+.cart__itemsAmount {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--gray);
+    font-size: 1rem;
+}
+
+.cart__deleteAllButton {
+    min-width: 0 !important;
+    width: 1rem !important;
+    height: 1rem !important;
+    border-radius: 5px !important;
+    background-color: var(--gray) !important;
+}
+
+.cart__deleteAllIcon {
+    color: var(--light) !important;
+    width: .75rem !important;
+    height: .75rem !important;
+}
+
+.cart__cost {
+    font-size: 1.25rem;
+    padding: 1rem;
+    padding-top: 0;
+} 
+
+.cart__button {
+    width: 90%;
+    margin: 1rem !important;
+    border-radius: 5px !important;
+    background-color: var(--gray) !important;
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+    color: var(--light) !important;
+}
+
+@media (min-width: 350px) {
+    .cart__deleteAllButton {
+        width: 1.75rem !important;
+        height: 1.75rem !important;
+    }
+    
+    .cart__deleteAllIcon {
+        width: 1.5rem !important;
+        height: 1.5rem !important;
+    }
+}
