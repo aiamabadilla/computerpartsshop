@@ -33,7 +33,7 @@ const Cart = ({ cart, onUpdateCartQty, onRemoveFromCart, onEmptyCart, loading })
                         </div>
                         <h5 className="cart__cost">{loading ? "$0" :cart.subtotal.formatted_with_symbol}</h5>
                     </div>
-                    <Button className="cart__button">proceed to checkout</Button>
+                    <Button component={Link} to="/checkout" className="cart__button">proceed to checkout</Button>
                 </div>
             </div>
         </div>

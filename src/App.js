@@ -1,7 +1,7 @@
 import React, { createContext, useState, useEffect } from 'react'
 import { useMediaQuery } from 'react-responsive'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Navbar, Products, Cart } from "./components";
+import { Navbar, Products, Cart, Checkout } from "./components";
 import { commerce } from "./lib/commerce";
 
 import "./styles.css";
@@ -81,6 +81,9 @@ const App = () => {
                             onRemoveFromCart={handleRemoveFromCart}
                             onEmptyCart={handleEmptyCart} 
                             loading={loadingCart}/> 
+                        </Route>
+                        <Route exact="true" path="/checkout">
+                            <Checkout />
                         </Route>
                     </Switch>
                     <h5 className="app__footer">Copyright © Computer Parts</h5>   
