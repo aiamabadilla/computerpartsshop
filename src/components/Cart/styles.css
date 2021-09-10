@@ -1,5 +1,4 @@
 .cart {
-    margin: 0 auto;
     padding: 4rem .5rem;
     display: flex;
     flex-direction: column;
@@ -14,6 +13,18 @@
     letter-spacing: 2px;
     font-weight: 500;
     color: var(--dark-gray);
+}
+
+.cart__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart__itemsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .cart__loading {
@@ -34,10 +45,10 @@
     margin-top: 1rem;
     border: 1px solid var(--light-gray);
     max-width: 400px;
+    width: 100%;
 }
 
 .cart__infoHeader {
-    width: 100%;
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid var(--light-gray);
@@ -55,6 +66,7 @@
     letter-spacing: 1px;
     color: var(--gray);
     font-size: 1rem;
+    margin-right: 1rem;
 }
 
 .cart__deleteAllButton {
@@ -96,5 +108,26 @@
     .cart__deleteAllIcon {
         width: 1.5rem !important;
         height: 1.5rem !important;
+    }
+}
+
+@media (min-width: 925px) {
+    .cart__content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .cart__info {
+        margin: 0;
+        margin-left:  1rem;
+    }
+    .cart__itemsContainer {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1116px) {
+    .cart {
+        width: 100%;
+        margin: 0 auto;
     }
 }

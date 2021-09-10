@@ -1,6 +1,5 @@
 .cartitem {
     width: 100%;
-    max-width: 575px;
     height: 100px;
     margin-bottom: .5rem;
     display: flex;

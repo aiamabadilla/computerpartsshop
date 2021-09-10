@@ -83,11 +83,11 @@
     }
     
     .product:nth-child(odd) {
-        margin-right: auto;
+        margin-right: .5rem;
     }
 
     .product:nth-child(even) {
-        margin-left: auto;
+        margin-left: .5rem;
     }
 }
 

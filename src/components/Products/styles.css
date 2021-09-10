@@ -1,5 +1,4 @@
 .products {
-    margin: 0 auto;
     padding: 4rem .5rem;
     display: flex;
     flex-direction: column;
@@ -31,6 +30,9 @@
 
 
 @media (min-width: 925px) {
+    .products {
+        margin: 0 auto;
+    }
     .products__title {
         margin-left: 0;
     }
